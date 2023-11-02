@@ -6,7 +6,7 @@ public class Input {
 
     public Input(String line) {
         String[] array = line.split(" ");
-        command = array[0];
+        command = array[0].replaceFirst("/", "");
         arguments = new String[array.length - 1];
 
         for (int i = 1; i < array.length; i++) {
