@@ -8,6 +8,10 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 
 public class FoodItem extends InventoryItem implements Perishable {
+    FoodItem(String title, String description, BigDecimal price, Category... categories) {
+        super(title, description, price, categories);
+    }
+
     @Override
     public void setCategories() {
 
